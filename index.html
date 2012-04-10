@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css.css"/>
-        <script src="jquery-1.7.1.min.js"></script>
-        <script src="image-preloader.js"></script>
+
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/jquery.image-preload.js"></script>
         <script>
             /*Режимы(modes):
              *1.invisible - не показывается прогресс загрузки и обьекты показываються по мере их полной загрузки
@@ -13,22 +13,29 @@
              *4.inside - блок показывающий загрузку показывается в блоке указанном в параметре target;
              **/
             $(function(){
-                $('img').imagePreloader({target:'.css_backgrounds',mode:'inside',effect:'slideUp'});
-            }) 
+            $('*').imagePreloader({target:'body',mode:'fullScreen',effect:'fadeOut'});    
+            })
+            
+            
             
         </script>
+        <link rel="stylesheet" href="css/test.css"/>
+        <link rel="stylesheet" href="css/jquery.image-preload.css"/>
     </head>
     <body>
         <div id="main">
             <div class="just_images">
+                <p>Just images:</p>
                 <img src="images/1.jpg"/>
                 <img src="images/2.jpg"/>
                 <img src="images/3.jpg"/>
             </div>
             <div class="css_backgrounds">
+                <br/>
+                <p>Divs with CSS-property: background-image:</p>
                 <div class="cb1"></div>
                 <div class="cb2"></div>
-<!--                <div class="cb3"></div>
+                <div class="cb3"></div>
                 <div class="cb4"></div>
                 <div class="cb5"></div>
                 <div class="cb6"></div>
@@ -37,7 +44,7 @@
                 <div class="cb9"></div>
                 <div class="cb10"></div>
                 <div class="cb11"></div>
-                <div class="cb12"></div>-->
+                <div class="cb12"></div>
             </div>
         </div>
     </body>

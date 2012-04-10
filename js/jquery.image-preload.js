@@ -9,6 +9,8 @@
         mode=o.mode;
         target=o.target;
         effect=o.effect;
+        
+        //(mode=='fullScreen'||mode=='inside')?:'';
          
         var images=this.filter('img').filter(function(){
             if($(this).attr('src')!=''){
@@ -20,11 +22,16 @@
                 return  this;
             }
         })
+        
+        
+        
         var all=images.add(divsBg);
         count=images.size()+divsBg.size();
         
+       // alert(count)
+        
         if(count>0){
-            wayAppendPreload();
+            wayAppendPreload()
             var unit =equalParts(count,$('.p_progress').width());
             var status=true;
             var unitPc=equalParts(count,100);
