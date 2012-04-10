@@ -1,0 +1,16 @@
+.just_images{text-align: center;padding:1em;background: #87C5FA}
+.just_images img{max-width:300px;margin:2em auto;}
+.css_backgrounds{background: #E9E8E2;text-align: center}
+.css_backgrounds div{width:200px;height: 150px;border:1px dashed grey;display: inline-block;margin:1em;border-radius:5px;background-size: 100% 100%;background-repeat: no-repeat}
+.cb1{background: url('images/backgrounds/1.jpg');}
+.cb2{background: url('images/backgrounds/2.jpg');}
+.cb3{background: url('images/backgrounds/3.jpg');}
+.cb4{background: url('images/backgrounds/4.jpg');}
+.cb5{background: url('images/backgrounds/5.jpg');}
+.cb6{background: url('images/backgrounds/6.jpg');}
+.cb7{background: url('images/backgrounds/7.jpg');}
+.cb8{background: url('images/backgrounds/8.jpg');}
+.cb9{background: url('images/backgrounds/9.jpg');}
+.cb10{background: url('images/backgrounds/10.jpg');}
+.cb11{background: url('images/backgrounds/11.jpg');}
+.cb12{background: url('images/backgrounds/12.jpg');}

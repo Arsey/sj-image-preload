@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css.css"/>
+        <script src="jquery-1.7.1.min.js"></script>
+        <script src="image-preloader.js"></script>
+        <script>
+            /*Режимы(modes):
+             *1.invisible - не показывается прогресс загрузки и обьекты показываються по мере их полной загрузки
+             *2.invisibleAll - не показывается прогресс загрузки и обьекты показываються все вместе после их полной загрузки
+             *3.fullScreen - на странице появляется полноекранный блок,показывающий состояние загрузки и который пропадает после полной загрузки
+             *4.inside - блок показывающий загрузку показывается в блоке указанном в параметре target;
+             **/
+            $(function(){
+                $('img').imagePreloader({target:'.css_backgrounds',mode:'inside',effect:'slideUp'});
+            }) 
+            
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="just_images">
+                <img src="images/1.jpg"/>
+                <img src="images/2.jpg"/>
+                <img src="images/3.jpg"/>
+            </div>
+            <div class="css_backgrounds">
+                <div class="cb1"></div>
+                <div class="cb2"></div>
+<!--                <div class="cb3"></div>
+                <div class="cb4"></div>
+                <div class="cb5"></div>
+                <div class="cb6"></div>
+                <div class="cb7"></div>
+                <div class="cb8"></div>
+                <div class="cb9"></div>
+                <div class="cb10"></div>
+                <div class="cb11"></div>
+                <div class="cb12"></div>-->
+            </div>
+        </div>
+    </body>
+</html>
