@@ -1,1 +1,20 @@
-Project description
+sj-image-preload jQuery Plugin v.1.0.0
+--------------------------------------
+Copyright (c) 2012 Alex Lazarev. Licensed under the MIT license.
+
+Overview
+--------
+
+A jQuery plugin that can preload images and any element with background-image css property easier.
+
+Features include:
+	- invisible and visible loading wrapped objects;
+	- considering the cache preloading 
+
+
+Usage
+-----
+
+// simple way to preload all images and HTML-elements with background-images
+$('*').imagePreloader();
+
